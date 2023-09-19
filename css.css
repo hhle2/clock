@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, #ffecd2  0%, #fcb69f 100%);
+}
+h1 {
+    font-size: 2.5em;
+    font-family: 'Lobster Two', cursive;
+}
+#break-session {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+
+}
+.in-de {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15% 0;
+}
+#break-length, #session-length {
+    margin: 0 10%;
+    font-size: 1.4em;
+    font-family: 'Zen Dots', cursive;
+    color:darkred;
+}
+.label {
+    width: 100%;
+    margin-top: 15%;
+    font-size: 1.2em;
+    color: saddlebrown;
+}
+.up-down {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+#timer-label {
+    
+    font-size: 2.4em;
+    margin: 4% 0;
+    color:indigo;
+}
+#timer {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    border: 2px solid saddlebrown;
+    padding: 1% 14%;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 2px saddlebrown;
+}
+#time-left {
+    font-size: 1.4em;
+    font-family: 'Zen Dots', cursive;
+    padding-top: 1em;
+}
+#tool {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#start, #set-reset {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+#start_stop, #reset {
+    margin-right: 15%;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1537px) {
+    #tool {
+        width: 20%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #timer-label {
+        font-size: 1.8em;
+    }
+    #break-length, #session-length, #time-left, #start_stop, #reset {
+        font-size: 1.1em;
+    }
+    #start, #set-reset {
+        margin-top: 10%;
+    }
+}
+@media only screen and (max-width: 680px) { 
+    #timer-label {
+        font-size: 1.5em;
+    }
+    #break-length, #session-length, #time-left, #start_stop, #reset {
+        font-size: 1em;
+    }
+    #start, #set-reset {
+        margin-top: 10%;
+    }
+    #tool {
+        width: 30%;
+    }
+    .label {
+        font-size: 1em;
+    }
+   
+    #break-session {
+        width: 50%;
+        justify-content: space-between;
+
+    }
+}
+@media only screen and (max-width: 600px) {
+    #timer {
+        padding: 1em 8em;
+    }
+} 
+@media only screen and (max-width: 450px) {
+    #timer-label {
+        font-size: 1.2em;
+    }
+    .label {
+        font-size: 0.8em;
+    }
+    #tool {
+        width: 50%;
+    }
+    #break-session {
+        width: 65%;
+        
+
+    }
+}
